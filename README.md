@@ -1,220 +1,405 @@
-This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
-
-Below you'll find information about performing common tasks. The most recent version of this guide is available [here](https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md).
-
-## Table of Contents
-
-* [Updating to New Releases](#updating-to-new-releases)
-* [Available Scripts](#available-scripts)
-  * [npm start](#npm-start)
-  * [npm test](#npm-test)
-  * [npm run ios](#npm-run-ios)
-  * [npm run android](#npm-run-android)
-  * [npm run eject](#npm-run-eject)
-* [Writing and Running Tests](#writing-and-running-tests)
-* [Environment Variables](#environment-variables)
-  * [Configuring Packager IP Address](#configuring-packager-ip-address)
-* [Adding Flow](#adding-flow)
-* [Customizing App Display Name and Icon](#customizing-app-display-name-and-icon)
-* [Sharing and Deployment](#sharing-and-deployment)
-  * [Publishing to Expo's React Native Community](#publishing-to-expos-react-native-community)
-  * [Building an Expo "standalone" app](#building-an-expo-standalone-app)
-  * [Ejecting from Create React Native App](#ejecting-from-create-react-native-app)
-    * [Build Dependencies (Xcode & Android Studio)](#build-dependencies-xcode-android-studio)
-    * [Should I Use ExpoKit?](#should-i-use-expokit)
-* [Troubleshooting](#troubleshooting)
-  * [Networking](#networking)
-  * [iOS Simulator won't open](#ios-simulator-wont-open)
-  * [QR Code does not scan](#qr-code-does-not-scan)
-
-## Updating to New Releases
-
-You should only need to update the global installation of `create-react-native-app` very rarely, ideally never.
-
-Updating the `react-native-scripts` dependency of your app should be as simple as bumping the version number in `package.json` and reinstalling your project's dependencies.
-
-Upgrading to a new version of React Native requires updating the `react-native`, `react`, and `expo` package versions, and setting the correct `sdkVersion` in `app.json`. See the [versioning guide](https://github.com/react-community/create-react-native-app/blob/master/VERSIONS.md) for up-to-date information about package version compatibility.
-
-## Available Scripts
-
-If Yarn was installed when the project was initialized, then dependencies will have been installed via Yarn, and you should probably use it to run these commands as well. Unlike dependency installation, command running syntax is identical for Yarn and NPM at the time of this writing.
-
-### `npm start`
-
-Runs your app in development mode.
-
-Open it in the [Expo app](https://expo.io) on your phone to view it. It will reload if you save edits to your files, and you will see build errors and logs in the terminal.
-
-Sometimes you may need to reset or clear the React Native packager's cache. To do so, you can pass the `--reset-cache` flag to the start script:
-
-```
-npm start -- --reset-cache
-# or
-yarn start -- --reset-cache
-```
-
-#### `npm test`
-
-Runs the [jest](https://github.com/facebook/jest) test runner on your tests.
-
-#### `npm run ios`
-
-Like `npm start`, but also attempts to open your app in the iOS Simulator if you're on a Mac and have it installed.
-
-#### `npm run android`
-
-Like `npm start`, but also attempts to open your app on a connected Android device or emulator. Requires an installation of Android build tools (see [React Native docs](https://facebook.github.io/react-native/docs/getting-started.html) for detailed setup). We also recommend installing Genymotion as your Android emulator. Once you've finished setting up the native build environment, there are two options for making the right copy of `adb` available to Create React Native App:
-
-##### Using Android Studio's `adb`
-
-1. Make sure that you can run adb from your terminal.
-2. Open Genymotion and navigate to `Settings -> ADB`. Select “Use custom Android SDK tools” and update with your [Android SDK directory](https://stackoverflow.com/questions/25176594/android-sdk-location).
-
-##### Using Genymotion's `adb`
-
-1. Find Genymotion’s copy of adb. On macOS for example, this is normally `/Applications/Genymotion.app/Contents/MacOS/tools/`.
-2. Add the Genymotion tools directory to your path (instructions for [Mac](http://osxdaily.com/2014/08/14/add-new-path-to-path-command-line/), [Linux](http://www.computerhope.com/issues/ch001647.htm), and [Windows](https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/)).
-3. Make sure that you can run adb from your terminal.
-
-#### `npm run eject`
-
-This will start the process of "ejecting" from Create React Native App's build scripts. You'll be asked a couple of questions about how you'd like to build your project.
-
-**Warning:** Running eject is a permanent action (aside from whatever version control system you use). An ejected app will require you to have an [Xcode and/or Android Studio environment](https://facebook.github.io/react-native/docs/getting-started.html) set up.
-
-## Customizing App Display Name and Icon
-
-You can edit `app.json` to include [configuration keys](https://docs.expo.io/versions/latest/guides/configuration.html) under the `expo` key.
-
-To change your app's display name, set the `expo.name` key in `app.json` to an appropriate string.
-
-To set an app icon, set the `expo.icon` key in `app.json` to be either a local path or a URL. It's recommended that you use a 512x512 png file with transparency.
-
-## Writing and Running Tests
-
-This project is set up to use [jest](https://facebook.github.io/jest/) for tests. You can configure whatever testing strategy you like, but jest works out of the box. Create test files in directories called `__tests__` or with the `.test` extension to have the files loaded by jest. See the [the template project](https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/App.test.js) for an example test. The [jest documentation](https://facebook.github.io/jest/docs/en/getting-started.html) is also a wonderful resource, as is the [React Native testing tutorial](https://facebook.github.io/jest/docs/en/tutorial-react-native.html).
-
-## Environment Variables
-
-You can configure some of Create React Native App's behavior using environment variables.
-
-### Configuring Packager IP Address
-
-When starting your project, you'll see something like this for your project URL:
-
-```
-exp://192.168.0.2:19000
-```
-
-The "manifest" at that URL tells the Expo app how to retrieve and load your app's JavaScript bundle, so even if you load it in the app via a URL like `exp://localhost:19000`, the Expo client app will still try to retrieve your app at the IP address that the start script provides.
-
-In some cases, this is less than ideal. This might be the case if you need to run your project inside of a virtual machine and you have to access the packager via a different IP address than the one which prints by default. In order to override the IP address or hostname that is detected by Create React Native App, you can specify your own hostname via the `REACT_NATIVE_PACKAGER_HOSTNAME` environment variable:
-
-Mac and Linux:
-
-```
-REACT_NATIVE_PACKAGER_HOSTNAME='my-custom-ip-address-or-hostname' npm start
-```
-
-Windows:
-```
-set REACT_NATIVE_PACKAGER_HOSTNAME='my-custom-ip-address-or-hostname'
-npm start
-```
-
-The above example would cause the development server to listen on `exp://my-custom-ip-address-or-hostname:19000`.
-
-## Adding Flow
-
-Flow is a static type checker that helps you write code with fewer bugs. Check out this [introduction to using static types in JavaScript](https://medium.com/@preethikasireddy/why-use-static-types-in-javascript-part-1-8382da1e0adb) if you are new to this concept.
-
-React Native works with [Flow](http://flowtype.org/) out of the box, as long as your Flow version matches the one used in the version of React Native.
-
-To add a local dependency to the correct Flow version to a Create React Native App project, follow these steps:
-
-1. Find the Flow `[version]` at the bottom of the included [.flowconfig](.flowconfig)
-2. Run `npm install --save-dev flow-bin@x.y.z` (or `yarn add --dev flow-bin@x.y.z`), where `x.y.z` is the .flowconfig version number.
-3. Add `"flow": "flow"` to the `scripts` section of your `package.json`.
-4. Add `// @flow` to any files you want to type check (for example, to `App.js`).
-
-Now you can run `npm run flow` (or `yarn flow`) to check the files for type errors.
-You can optionally use a [plugin for your IDE or editor](https://flow.org/en/docs/editors/) for a better integrated experience.
-
-To learn more about Flow, check out [its documentation](https://flow.org/).
-
-## Sharing and Deployment
-
-Create React Native App does a lot of work to make app setup and development simple and straightforward, but it's very difficult to do the same for deploying to Apple's App Store or Google's Play Store without relying on a hosted service.
-
-### Publishing to Expo's React Native Community
-
-Expo provides free hosting for the JS-only apps created by CRNA, allowing you to share your app through the Expo client app. This requires registration for an Expo account.
-
-Install the `exp` command-line tool, and run the publish command:
-
-```
-$ npm i -g exp
-$ exp publish
-```
-
-### Building an Expo "standalone" app
-
-You can also use a service like [Expo's standalone builds](https://docs.expo.io/versions/latest/guides/building-standalone-apps.html) if you want to get an IPA/APK for distribution without having to build the native code yourself.
-
-### Ejecting from Create React Native App
-
-If you want to build and deploy your app yourself, you'll need to eject from CRNA and use Xcode and Android Studio.
-
-This is usually as simple as running `npm run eject` in your project, which will walk you through the process. Make sure to install `react-native-cli` and follow the [native code getting started guide for React Native](https://facebook.github.io/react-native/docs/getting-started.html).
-
-#### Should I Use ExpoKit?
-
-If you have made use of Expo APIs while working on your project, then those API calls will stop working if you eject to a regular React Native project. If you want to continue using those APIs, you can eject to "React Native + ExpoKit" which will still allow you to build your own native code and continue using the Expo APIs. See the [ejecting guide](https://github.com/react-community/create-react-native-app/blob/master/EJECTING.md) for more details about this option.
-
-## Troubleshooting
-
-### Networking
-
-If you're unable to load your app on your phone due to a network timeout or a refused connection, a good first step is to verify that your phone and computer are on the same network and that they can reach each other. Create React Native App needs access to ports 19000 and 19001 so ensure that your network and firewall settings allow access from your device to your computer on both of these ports.
-
-Try opening a web browser on your phone and opening the URL that the packager script prints, replacing `exp://` with `http://`. So, for example, if underneath the QR code in your terminal you see:
-
-```
-exp://192.168.0.1:19000
-```
-
-Try opening Safari or Chrome on your phone and loading
-
-```
-http://192.168.0.1:19000
-```
-
-and
-
-```
-http://192.168.0.1:19001
-```
-
-If this works, but you're still unable to load your app by scanning the QR code, please open an issue on the [Create React Native App repository](https://github.com/react-community/create-react-native-app) with details about these steps and any other error messages you may have received.
-
-If you're not able to load the `http` URL in your phone's web browser, try using the tethering/mobile hotspot feature on your phone (beware of data usage, though), connecting your computer to that WiFi network, and restarting the packager.
-
-### iOS Simulator won't open
-
-If you're on a Mac, there are a few errors that users sometimes see when attempting to `npm run ios`:
-
-* "non-zero exit code: 107"
-* "You may need to install Xcode" but it is already installed
-* and others
-
-There are a few steps you may want to take to troubleshoot these kinds of errors:
-
-1. Make sure Xcode is installed and open it to accept the license agreement if it prompts you. You can install it from the Mac App Store.
-2. Open Xcode's Preferences, the Locations tab, and make sure that the `Command Line Tools` menu option is set to something. Sometimes when the CLI tools are first installed by Homebrew this option is left blank, which can prevent Apple utilities from finding the simulator. Make sure to re-run `npm/yarn run ios` after doing so.
-3. If that doesn't work, open the Simulator, and under the app menu select `Reset Contents and Settings...`. After that has finished, quit the Simulator, and re-run `npm/yarn run ios`.
-
-### QR Code does not scan
-
-If you're not able to scan the QR code, make sure your phone's camera is focusing correctly, and also make sure that the contrast on the two colors in your terminal is high enough. For example, WebStorm's default themes may [not have enough contrast](https://github.com/react-community/create-react-native-app/issues/49) for terminal QR codes to be scannable with the system barcode scanners that the Expo app uses.
-
-If this causes problems for you, you may want to try changing your terminal's color theme to have more contrast, or running Create React Native App from a different terminal. You can also manually enter the URL printed by the packager script in the Expo app's search bar to load it manually.
+# React Native - La Guia Practica (Curso de Udemy)
+
+## Configuracion Inicial
+Esta configuracion se realiza con el siguiente ambiente de desarrollo:
+* Equipo Macbook
+* XCode instalado
+* Android Studio instalado
+* Node & NPM instalados
+
+
+### Creacion de App React Native y Repositorio Github para control de cambios.
+1. Creamos nuestra primera App de RN con el comando : ```create-react-native-app rn-course```
+
+1. Creamos nuesro proyecto Github
+   ```git
+   git init
+   git add .
+   git status
+   git commit -m "Primer Commit - Iniciando Repositorio"
+   git status
+   ```
+1. Nos vamos a nuestra cuenta GitHub y creamos nuevo repositorio con nombre *rn-course* lo dejamos *publico*, y le damos click al boton de Create Repository
+
+1. Subimos nuestro proyecto "*rn-course*" creado localmente a nuestro repositorio github *rn-course*:
+    ```git
+    git status
+    git remote add origin https://github.com/tuusuario/rn-course.git
+    git push -u origin master
+    git status
+    ```
+
+---
+## Ejecutando App en Modo desarrollo con Expo
+
+1. Levantamos servidor expo
+```npm run start ```
+1. Descargamos la aplicacion Expo en nuestra dispositivo iOS y la abrimos , escaneamos el codigo QR
+1. Pulsamos la tecla *i* para emulador iOS , ó *a* para emulador Android
+
+Con esto ya podremos ver nuestra **Aplicacion Rect Native** ejecutandose en modo desarrollo en nuestro dispositivo, si realizamos cualquier cambio a nuestra archivo **App.js** se reflejara en automatico ya que esta en modo live reload.
+  > NOTA: El archivo con el que iniciaremos nuestros pininos sera *App.js* , probemos con cambiar algo en el componente App ya sea agregandole estilos o modificando su codigo JSX, dichos cambios se reflejaran inmediatamente en nuestro dispositivo real , gracias a Expo.
+
+---
+## Temario del curso.
+
+* Sección: 1 : 11 capitulos
+  Getting Started
+    1. Welcome!
+    2. What is React Native?
+    3. A Closer Look
+    4. What Happens to JavaScript?
+    5. Creating Our First React Native App
+      fixing-setup-errors.pdf
+    6. Dealing with Limitations of React Native
+    7. What a Good Course Offers
+    8. Course Requirements
+    9. Course Outline
+    10. How to get the Most out of This Course
+    11. Useful Resources & Links
+
+* Sección 2 Diving into the Basics: 29 Capitulos
+
+    12. Module Introduction
+    13. [ **ESTAMOS AQUI** ] Creating a New Project
+      fixing-setup-errors.pdf
+    14. JSX Elements you Can and Can't Use
+    15. Ejecting from Create React Native App
+    16. How to Use the Attached Code
+    17. Running the App on an Android Simulator (+ Setup)
+      fixing-adb-not-found.pdf
+    18. Running our App on a Real Android Device
+      turning-on-dev-mode.pdf
+    19. Preparing XCode (for iOS)
+    20. Running our App on an iOS Simulator
+    21. Running our App on an iOS Device
+    22. A Good Development Setup
+    23. Working on the App: Adding a Textinput
+    24. Styling - Understanding the Basics
+      basics--01-first-elements.zip
+    25. More on Flexbox
+    26. Positioning Elements with Flexbox
+      basics--02-basic-list.zip
+    27. Adding a Button and Managing State
+    28. Creating a Custom Component
+      Tarea 1: Time to Practice - The Basics
+    29. Listening to Touch Events
+      basics--03-split-into-components.zip
+    30. Reacting to Press Events
+      basics--04-delete-items.zip
+    31. Using a ScrollView
+      basics--05-scrollview.zip
+    32. Rendering Lists Correctly
+      basics--06-flatlist.zip
+    33. Adding Static Images
+      beautiful-place.jpg
+    34. Using Network Images
+    35. Adding a Modal
+      basics--08-modal.zip
+    36. React vs React Native
+    37. JavaScript - Supported Features
+      basics-23-js-and-supported-features.mp4
+    38. Wrap Up
+      basics--09-finished.zip
+    39. Useful Resources & Links
+      basics--01-first-elements.zip
+      basics--02-basic-list.zip
+      basics--03-split-into-components.zip
+      basics--04-delete-items.zip
+      basics--05-scrollview.zip
+      basics--06-flatlist.zip
+      basics--07-images.zip
+      basics--08-modal.zip
+      basics--09-finished.zip
+
+* Sección: 3 Using Redux with React Native: 9 Capitulos
+
+    40. Module Introduction
+    41. A Brief Redux Refresher
+    42. Installing Redux and Creating a Basic Setup
+    43. Setting Up Actions
+    44. Setting Up the Reducer
+    45. Creating the Store
+    46. Connecting React Native to Redux
+    47. Wrap Up
+    48. Useful Resources & Links
+      redux--01-finished.zip
+
+* Sección: 4 Debugging React Native Apps : 7 Capitulos
+
+    49. Module Introduction
+    50. Using the Remote JavaScript Debugging console.log
+    51. Debugging with Breakpoints
+    52. Debugging+++ with React Native Debugger
+    53. Debugging Redux
+    54. Wrap Up
+    55. Useful Resources & Links
+      debugging--01-finished.zip
+
+
+* Sección: 5 Linking and Using Third Party Libraries : 7 Capitulos
+
+    56. Module Introduction
+    57. Installing Libraries
+    58. Automatic Linking
+    59. Linking Libraries on iOS
+    60. Linking Libraries on Android
+    61. Using Library Features: Adding Icons
+    62. Wrap Up
+      3rd-party--01-finished.zip
+
+* Sección: 6 Navigation in React Native Apps : 19 Capitulos
+
+    63. Module Introduction
+    64. Navigation in Web Apps vs Native Apps
+    65. Exploring Native Navigation Solutions
+    66. Adding React Native Navigation to iOS
+    67. Adding React Native Navigation to Android
+    68. Finishing the Library Setup
+    69. Registering and Rendering a Screen
+      navigation--01-auth-screen.zip
+    70. Adding a Tabs Screen (Tabs Navigation)
+    71. Adding Icons to Tabs
+      navigation--02-tabs-with-icons.zip
+    72. Connecting Screens to Redux
+    73. Updating Redux
+    74. Pushing Pages (Navigating "Forwards")
+    75. Popping Pages (Navigating "Backwards")
+    76. More Navigator Methods
+      navigation--03-manage-places.zip
+    77. Adding a Side Drawer
+    78. Using Navigation Events & Toggling the Drawer
+    79. Finishing the Drawer
+      navigation--04-sidedrawer.zip
+    80. Wrap Up
+    81. Useful Resources & Links
+      navigation--01-auth-screen.zip
+      navigation--02-tabs-with-icons.zip
+      navigation--03-manage-places.zip
+      navigation--04-sidedrawer.zip
+
+* Sección: 7 Styling & Animating React Native Apps (Correctly): 38 Capitulos
+
+    82. Module Introduction
+    83. Using StyleSheet vs Normal JS Objects
+    84. Vanilla CS vs React Native Styles
+    85. Flexbox in Action
+      styling-animations--01-flexbox.zip
+    86. Styling with Relative Units
+    87. "Global Styles" with Custom Components
+    88. Synthetic Cascading of Styles
+    89. Styling Text
+    90. Cascading Text Styles
+      styling-animations--02-textinputs.zip
+    91. Adding a Background Image
+      background.jpg
+    92. Creating a Re-Usable Custom Button
+      styling-animations--03-finished-auth-screen.zip
+    93. Editing the "Share Place" Screen
+      styling-animations--04-share-place-no-split-up.zip
+    94. Styling & Splitting the "Share Place" Screen
+      styling-animations--05-share-place-split-up.zip
+    95. Finishing the "Share Place" Screen
+      styling-animations--06-share-place-finished.zip
+    96. Your Challenge!
+    97. Styling the Side Drawer
+    98. Quick Bug Fix: PlaceInput Component
+      styling-animations--07-styled-drawer.zip
+    99. Intro: Cross Platform Styles & Responsiveness
+    100. Cross-Platform Styling Made Easy!
+    101. Using the Platform API
+    102. Loading Different Icons for Different Platforms
+    103. Using Different Entry Points (into the App)
+    104. Cross-Platform UI Libraries
+    105. The "Responsive Styling" Problem
+    106. Responsive Design Solutions
+    107. Using the Dimensions API
+      styling-animations--08-bad-responsive-design.zip
+    108. Adjusting Styles Dynamically (to changing Width / Height)
+      styling-animations--09-bad-real-responsive-design.zip
+    109. A Better Responsive Solution
+      styling-animations--10-good-responsive-design.zip
+    110. Bug Fix: Centering with Margins
+    111. Cleaning Up Dimensions Listeners
+      styling-animations--11-clean-up-listener.zip
+      Tarea 2: Time to Practice - Responsive Designs
+    112. Styling Navigation Items (react-native-navigation)
+      styling-animations--13-navigation-styling.zip
+    113. Preparing the App for Animations
+    114. Using the Animated API
+      styling-animations--14-finished-animation.zip
+      Tarea 3: Time to Practice - Animations
+    115. Animations Summary
+    116. Wrap Up
+    117. Useful Resources & Links
+      styling-animations--01-flexbox.zip
+      styling-animations--02-textinputs.zip
+      styling-animations--03-finished-auth-screen.zip
+      styling-animations--04-share-place-no-split-up.zip
+      styling-animations--05-share-place-split-up.zip
+      styling-animations--06-share-place-finished.zip
+      styling-animations--07-styled-drawer.zip
+      styling-animations--08-bad-responsive-design.zip
+      styling-animations--09-bad-real-responsive-design.zip
+      styling-animations--10-good-responsive-design.zip
+      styling-animations--11-clean-up-listener.zip
+      styling-animations--12-responsive-place-detail.zip
+      styling-animations--13-navigation-styling.zip
+      styling-animations--14-finished-animation.zip
+      styling-animations--15-finished.zip
+
+* Sección: 8 Handling User Input: 12 Capitulos
+
+    118. Module Introduction
+    119. Managing Input/ Control State
+    120. Adding Custom Validation Logic
+      form-input--01-input-handling-and-validation.zip
+    121. Using the Validation State
+      form-input--02-validation-feedback.zip
+    122. Dispatching an Auth Action
+    123. Switching Form (Auth) Modes
+      form-input--03-login-signup-switch.zip
+    124. Configuring Text Input Components
+    125. Handling the Soft Keyboard
+      form-input--04-handle-soft-keyboard.zip
+    Tarea 4: Time to Practice - User Input
+    126. Wrap Up
+    127. KeyboardAvoidingView and ScrollView
+    128. Useful Resources & Links
+      form-input--01-input-handling-and-validation.zip
+      form-input--02-validation-feedback.zip
+      form-input--03-login-signup-switch.zip
+      form-input--04-handle-soft-keyboard.zip
+      form-input--05-finished.zip
+
+* Sección: 9 Using Native Device Features - Maps, Camera & Image Gallery : 15 Capitulos
+
+    129. Module Introduction
+    130. Installing react-native-maps
+    131. Rendering a Map
+    132. Picking a Location on the Map
+    133. Adding a Map Marker
+      maps-camera--01-maps-and-marker.zip
+    134. Animating Map Movement
+      maps-camera--02-map-animation.zip
+    135. Locating the User
+      maps-camera--03-locate-user.zip
+    136. Storing the Picked Location with Redux
+      maps-camera--04-storing-locations.zip
+      Tarea 5: Time to Practice - Maps
+    137. Installing react-native-image-picker
+    138. Using the Image Picker
+    139. Storing the Picked Images
+    140. Image Picker and the Data it Returns
+      maps-camera--05-image-picker.zip
+    141. Wrap Up
+    142. Useful Resources & Links
+      maps-camera--01-maps-and-marker.zip
+      maps-camera--02-map-animation.zip
+      maps-camera--03-locate-user.zip
+      maps-camera--04-storing-locations.zip
+      maps-camera--assignment-solution.zip
+      maps-camera--05-image-picker.zip
+
+
+* Sección: 10 Networking - Sending Http Requests : 16 Capitulos
+
+    143. Module Introduction
+    144. Sending Http Requests - Theory
+    145. Creating the Server
+    146. Using the Fetch-API
+    147. Storing Data in Firebase
+      http--01-store-data.zip
+    148. Storing Images
+    149. Finishing the Image Upload Function
+      http--02-db-and-image-upload.zip
+    150. Storing the Remaining Data
+    151. Adding the Activity Indicator
+    152. Handling Errors
+    153. Http, fetch() and Error Handling
+    154. Getting Data from the Server
+      http--03-fetch-data.zip
+    155. Fixing an Error
+      Tarea 6: Time to Practice - Http
+    156. Wrap Up
+    157. Useful Resources & Links
+      http--01-store-data.zip
+      http--02-db-and-image-upload.zip
+      http--03-fetch-data.zip
+      http--04-delete-data.zip
+
+
+* Sección: 11  Authentication in React Native Apps: 22 Capitulos
+
+    158. Module Introduction
+    159. How Authentication Works in React Native Apps
+    160. Enabling Firebase Authentication
+    161. Signing Users Up
+      auth--01-signup.zip
+    162. Using the Authentication Result (Response)
+      auth--02-error-handling.zip
+    163. Supporting Signup and Login
+    164. Adding User Login
+      auth--03-signin.zip
+    165. Protecting Routes on Firebase
+    166. Storing the Auth Token in Redux
+      auth--04-store-token.zip
+    167. Using the Auth Token
+    168. Fetching the Token in a Re-Usable Way
+      auth--05-fetch-token.zip
+    169. Protecting the Firebase Cloudfunction
+    170. Adding Places (Authenticated)
+    171. Storing the Token in AsyncStorage
+    172. Adding an Auto-Signin Functionality
+      auth--06-auto-sign-in.zip
+    173. Managing the Token Expiration
+    174. Clearing the Auth Storage (AsyncStorage)
+      auth--07-async-storage-after-clear.zip
+    175. Refreshing the Token
+      auth--08-refresh-token.zip
+    176. Adding User Logout
+    177. Refreshing the Token Without App Reloads
+      auth--09-finished.zip
+    178. Wrap Up
+    179. Useful Resources & Links
+      auth--01-signup.zip
+      auth--02-error-handling.zip
+      auth--03-signin.zip
+      auth--04-store-token.zip
+      auth--05-fetch-token.zip
+      auth--06-auto-sign-in.zip
+      auth--07-async-storage-after-clear.zip
+      auth--08-refresh-token.zip
+      auth--09-finished.zip
+
+* Sección: 12 Polishing the App: 9 Capitulos
+
+    180. Module Introduction
+    181. Identifying "Improvement Potential"
+    182. Shrinking Image Sizes
+    183. Resetting the "Share Place" Screen
+    184. Redirecting to Another Tab
+      polish--01-reset-navigate-away.zip
+    185. Loading Places All The Time!
+    186. Improving Http Error Handling
+    187. Cleaning Stored Images (on Firebase)
+      polish--02-finished.zip
+    188. Wrap Up
+      polish--01-reset-navigate-away.zip
+      polish--02-finished.zip
+
+* Sección: 13 Publishing the App: 8 Capitulos
+
+    189. Module Introduction
+    190. Adding Launcher Icons
+      icons.zip
+    191. Adding a Splash Screen
+    192. Configuring & Building the App
+    193. Publishing to Google Play Store (Android)
+    194. Publishing to the App Store (iOS)
+    195. Publishing the App - Detailed Instructions
+    196. Useful Resources & Links
+
+* Sección: 14 : 1 Capitulo
+
+  Round Up
