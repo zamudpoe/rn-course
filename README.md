@@ -33,7 +33,7 @@ Esta configuracion se realiza con el siguiente ambiente de desarrollo:
 ## Ejecutando App en Modo desarrollo con Expo
 
 1. Levantamos servidor expo
-```npm run start ```
+```npm run start ``` ó ```react-native run-ios``` y para android ```react-native run-android```
 1. Descargamos la aplicacion Expo en nuestra dispositivo iOS y la abrimos , escaneamos el codigo QR
 1. Pulsamos la tecla *i* para emulador iOS , ó *a* para emulador Android
 
