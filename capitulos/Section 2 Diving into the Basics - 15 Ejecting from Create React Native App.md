@@ -2,7 +2,7 @@
 
 Ya que deseamos una "**aplicacion React Native Pura!**" , **necesitamos expulsarla!**.
 
-Al expulsarla nosotros vamos a hacer **uso de los emuladores**
+Al expulsarla nosotros vamos a hacer **uso de los emuladores** para cada dispositivo.
   * Android Studio (Android)
   * XCode (iOS) ,
 
@@ -18,7 +18,8 @@ React Native actualizara los archivos para **Ios** y **Android** para que los si
 reflejen dichos cambios en sus dispositivos emulados
 
     GENIAL!!!!!!!!
-
+---
+## Espulsando nuestra App
 **Expulsar la App creada** con Create React Native ,
   ```npm run eject```
 
