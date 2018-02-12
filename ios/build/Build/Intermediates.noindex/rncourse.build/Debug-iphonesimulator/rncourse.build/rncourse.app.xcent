@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>D3C4VL86K8.org.reactjs.native.example.rncourse</string>
+	<string>D3C4VL86K8.com.orange.rncourse</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>D3C4VL86K8.org.reactjs.native.example.rncourse</string>
+		<string>D3C4VL86K8.com.orange.rncourse</string>
 	</array>
 </dict>
 </plist>

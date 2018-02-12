@@ -1,15 +1,26 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TextInput } from 'react-native';
 
 export default class App extends Component {
+  state = {
+    placeName: ''
+  }
+
+  _placeNameChangeHandler = (val) => {
+    this.setState({
+      placeName: val
+    }, console.log('%c%s', "color: teal; fontWeight: bold;", val))
+  }
+
   render () {
     return (
       <View style={styles.container}>
-        <Text style = {{ color: 'tomato' , fontWeight: 'bold' }} >OLA K ASE?</Text>
-        <Text style = {{ color: 'teal'  }}>¿Programando React Native o k ase?</Text>
-        <Text>Abre App.js para iniciar tu desarrollo de tu App!</Text>
-        <Text>Los cambios que realices en el archivo se recargaran en automatico.</Text>
-        <Text>Sacude (iOS CTRL + CMD + Z, Android CMD + M ) tu smartphone para abrir el menu del desarrollador.</Text>
+        <TextInput
+          style        = { styles.textInput }
+          onChangeText = { this._placeNameChangeHandler.bind(this) }
+          placeholder  = "Asombrosos lugares!"
+          value        = { this.state.placeName }
+        />
       </View>
     );
   }
@@ -22,4 +33,11 @@ const styles = StyleSheet.create({
     alignItems     : 'center',
     justifyContent: 'center',
   },
+  textInput: {
+    width      : 300 ,
+    height     : 40,
+    borderColor: 'gray',
+    borderWidth: 1,
+    color      : 'tomato'
+  }
 });
