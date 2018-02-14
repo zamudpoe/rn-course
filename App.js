@@ -3,7 +3,8 @@ import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 
 export default class App extends Component {
   state = {
-    placeName: ''
+    placeName: '',
+    places: []
   }
 
   _placeNameChangeHandler = (val) => {
@@ -12,11 +13,23 @@ export default class App extends Component {
     }, console.log('%c%s', "color: teal; fontWeight: bold;", val))
   }
 
-  _onBotonPress = () => {
-    console.log('%cHey me has tocado %c\n\n\t¡Pervertido!\n', 'color: teal; font-weight: bold;', 'color: red; font-weight: bold; font-size: 2.5em' )
+  _placeSubmitHandler = () => {
+
+    if (this.state.placeName.trim() === "") {
+      return
+    }
+    this.setState(prevState => {
+      return {
+        places: prevState.places.concat(prevState.placeName)
+      }
+    }, console.table(this.state))
   }
 
   render () {
+    const placesOuput = this.state.places.map((place, idx) => (
+      <Text key= { idx } >{ place } </Text>
+    ))
+
     return (
       <View style={styles.mainContainer}>
         <View style={styles.inputContainer } >
@@ -28,9 +41,12 @@ export default class App extends Component {
           />
           <Button
             title   = "Add"
-            onPress = { this._onBotonPress.bind(this) }
+            onPress = { this._placeSubmitHandler.bind(this) }
             style   = { styles.btnStyles }
           />
+        </View>
+        <View  >
+          { placesOuput }
         </View>
       </View>
     )
@@ -56,7 +72,8 @@ const styles = StyleSheet.create({
   textInputStyles: {
     width    : '70%',
     color    : 'teal',
-    textAlign: 'center'
+    textAlign: 'center',
+    fontSize: 24,
   },
   btnStyles:{
     width: '30%',
