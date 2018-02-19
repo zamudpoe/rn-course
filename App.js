@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
+import { StyleSheet, View, TextInput, Button } from 'react-native';
+
+import ListItem from './src/componentes/ListItem'
 
 export default class App extends Component {
   state = {
@@ -10,24 +12,25 @@ export default class App extends Component {
   _placeNameChangeHandler = (val) => {
     this.setState({
       placeName: val
-    }, console.log('%c%s', "color: teal; fontWeight: bold;", val))
+    })
   }
 
   _placeSubmitHandler = () => {
 
     if (this.state.placeName.trim() === "") {
       return
+    } else {
+      this.setState(prevState => {
+        return {
+          places: prevState.places.concat(prevState.placeName)
+        }
+      }, console.log('%o', this.state))
     }
-    this.setState(prevState => {
-      return {
-        places: prevState.places.concat(prevState.placeName)
-      }
-    }, console.table(this.state))
   }
 
   render () {
     const placesOuput = this.state.places.map((place, idx) => (
-      <Text key= { idx } >{ place } </Text>
+      <ListItem key={ idx } placeName={ place } />
     ))
 
     return (
@@ -37,15 +40,15 @@ export default class App extends Component {
             onChangeText = { this._placeNameChangeHandler.bind(this) }
             placeholder  = "Asombrosos lugares..."
             value        = { this.state.placeName }
-            style        = { styles.textInputStyles }
+            style        = { styles.placeInput }
           />
           <Button
             title   = "Add"
             onPress = { this._placeSubmitHandler.bind(this) }
-            style   = { styles.btnStyles }
+            style   = { styles.placeButton }
           />
         </View>
-        <View  >
+        <View style={ styles.listContainer } >
           { placesOuput }
         </View>
       </View>
@@ -56,11 +59,12 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   mainContainer: {
     flex           : 1, /* Toma todo el espacio vertical disponible para ti */
+    padding        : 25,  /* Le damos padding para alejar nuestro componente del top  */
     flexDirection  : 'column', /* Establece el eje principal (Eje Y) y la direccion de sus hijos sera de arriba hacia abajo  */
     justifyContent : 'flex-start', /* coloca a tus hijos al inicio del eje principal (Eje Y)  */
     alignItems     : 'center', /* Posicionate en el centro del eje perpendicular (Eje X) al principal (Eje Y) */
-    paddingTop     : 25,  /* Le damos padding para alejar nuestro componente del top  */
     backgroundColor: 'whitesmoke',
+
   },
   inputContainer: {
     width          : '100%',
@@ -69,13 +73,20 @@ const styles = StyleSheet.create({
     alignItems     : 'center',
     backgroundColor: 'silver',
   },
-  textInputStyles: {
+  placeInput: {
     width    : '70%',
     color    : 'teal',
-    textAlign: 'center',
-    fontSize: 24,
+    textAlign: 'left',
+    fontSize : 24,
   },
-  btnStyles:{
+  placeButton:{
     width: '30%',
+  },
+  listContainer: {
+    /*
+      Como estos estilos se aplicaran a los hijos ,
+      es decir a nuestro componente personalizado <ListItem />
+    */
+    width: '100%',
   }
 });
