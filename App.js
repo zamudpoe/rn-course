@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, TextInput, Button, Text } from 'react-native';
+import { StyleSheet, View,  Text } from 'react-native';
 
-import ListItem from './src/componentes/ListItem'
 import PlaceInput from './src/componentes/PlaceInput'
+import PlaceList from './src/componentes/PlaceList'
 
 export default class App extends Component {
   state = {
@@ -17,18 +17,19 @@ export default class App extends Component {
     }, console.log('%o', this.state))
   }
 
-  render () {
-    const placesOuput = this.state.places.map((place, idx) => (
-      <ListItem key={ idx } placeName={ place } />
-    ))
+  _placeSelectedHandler = key  => {
+    this.props.onSelectPlace(key)
+  }
 
+  render () {
     return (
       <View style={styles.mainContainer}>
         <Text style= { styles.textLabel } >🗽 Mis Lugares</Text>
         <PlaceInput onPlaceAdded={ this._placeAddedHandler.bind(this) } />
-        <View style={ styles.listContainer } >
-          { placesOuput }
-        </View>
+        <PlaceList
+          places = { this.state.places }
+          onItemSelected = { this._placeSelectedHandler }
+        />
       </View>
     )
   }
@@ -44,15 +45,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'whitesmoke',
 
   },
-  listContainer: {
-    /*
-      Como estos estilos se aplicaran a los hijos ,
-      es decir a nuestro componente personalizado <ListItem />
-    */
-    width: '100%',
-  },
   textLabel: {
-    color   : 'teal',
+    color   : 'tomato',
     fontSize: 24,
   }
 });
