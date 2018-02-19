@@ -1,31 +1,20 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, TextInput, Button } from 'react-native';
+import { StyleSheet, View, TextInput, Button, Text } from 'react-native';
 
 import ListItem from './src/componentes/ListItem'
+import PlaceInput from './src/componentes/PlaceInput'
 
 export default class App extends Component {
   state = {
-    placeName: '',
     places: []
   }
 
-  _placeNameChangeHandler = (val) => {
-    this.setState({
-      placeName: val
-    })
-  }
-
-  _placeSubmitHandler = () => {
-
-    if (this.state.placeName.trim() === "") {
-      return
-    } else {
-      this.setState(prevState => {
-        return {
-          places: prevState.places.concat(prevState.placeName)
-        }
-      }, console.log('%o', this.state))
-    }
+  _placeAddedHandler = placeName => {
+    this.setState(prevState => {
+      return {
+        places: prevState.places.concat(placeName)
+      }
+    }, console.log('%o', this.state))
   }
 
   render () {
@@ -35,19 +24,8 @@ export default class App extends Component {
 
     return (
       <View style={styles.mainContainer}>
-        <View style={styles.inputContainer } >
-          <TextInput
-            onChangeText = { this._placeNameChangeHandler.bind(this) }
-            placeholder  = "Asombrosos lugares..."
-            value        = { this.state.placeName }
-            style        = { styles.placeInput }
-          />
-          <Button
-            title   = "Add"
-            onPress = { this._placeSubmitHandler.bind(this) }
-            style   = { styles.placeButton }
-          />
-        </View>
+        <Text style= { styles.textLabel } >🗽 Mis Lugares</Text>
+        <PlaceInput onPlaceAdded={ this._placeAddedHandler.bind(this) } />
         <View style={ styles.listContainer } >
           { placesOuput }
         </View>
@@ -66,27 +44,15 @@ const styles = StyleSheet.create({
     backgroundColor: 'whitesmoke',
 
   },
-  inputContainer: {
-    width          : '100%',
-    flexDirection  : 'row',
-    justifyContent : 'space-between',
-    alignItems     : 'center',
-    backgroundColor: 'silver',
-  },
-  placeInput: {
-    width    : '70%',
-    color    : 'teal',
-    textAlign: 'left',
-    fontSize : 24,
-  },
-  placeButton:{
-    width: '30%',
-  },
   listContainer: {
     /*
       Como estos estilos se aplicaran a los hijos ,
       es decir a nuestro componente personalizado <ListItem />
     */
     width: '100%',
+  },
+  textLabel: {
+    color   : 'teal',
+    fontSize: 24,
   }
 });
