@@ -94,6 +94,15 @@ const PlaceList = props => {
         }, console.log('\n\n%cEliminando el elemento %s\n', 'color: tomato; font-weight: bold;' , index))
       }
     ```
+    > **NOTA:** **El metodo javascript ```filter()```** Crea un nuevo arreglo con todos los elementos que pasan la prueba implementada en la funcion, En nuestro caso sera true cuando el elemento que vamos a eliminar **NO SEA IGUAL** a uno del array existente, dando como resultado en un nuevo array sin el elemento a eliminar, dicho array sera actualizado en el estado por medio del metodo ```setState``` ocacionando que se rerenderice nuestro componente sin el elemento eliminado!.
+
+      ```js
+      return {
+            places: prevState.places.filter((place, idxArray) => {
+              return idxArray !== index
+            })
+          }
+      ```
 
 1. Probamos nuestra aplicacion y podremos ver que nuestra aplicacion agrega y elimina items por medio del componente Touchable.
 
