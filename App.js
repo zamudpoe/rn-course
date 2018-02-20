@@ -17,8 +17,14 @@ export default class App extends Component {
     }, console.log('%o', this.state))
   }
 
-  _placeSelectedHandler = key  => {
-    this.props.onSelectPlace(key)
+  _onPlaceDeletedHandler = index  => {
+    this.setState(prevState => {
+      return {
+        places: prevState.places.filter((place, idxArray) => {
+          return idxArray !== index
+        })
+      }
+    }, console.log('\n\n%cEliminando el elemento %s\n', 'color: tomato; font-weight: bold;' , index))
   }
 
   render () {
@@ -28,7 +34,7 @@ export default class App extends Component {
         <PlaceInput onPlaceAdded={ this._placeAddedHandler.bind(this) } />
         <PlaceList
           places = { this.state.places }
-          onItemSelected = { this._placeSelectedHandler }
+          onItemDeleted = { this._onPlaceDeletedHandler }
         />
       </View>
     )

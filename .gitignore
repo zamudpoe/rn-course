@@ -6,6 +6,9 @@ README1.md
 # expo
 .expo/
 
+# respaldo local de los logs para posible restauracion de la historia del proyecto
+resplogs/
+
 # dependencies
 /node_modules
 
