@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		Ra/v1vcBpq8mISyJBkzhJzqIuBU=
+		IcKvZfaGgOSGuDqw5W7DnYmt2CM=
 		</data>
 		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
 		<data>
@@ -67,15 +67,15 @@
 		</data>
 		<key>PlugIns/rncourseTests.xctest/Info.plist</key>
 		<data>
-		e5I9VVbTLc7/yFCeh0guNh7pkhM=
+		LSYzH/PC+891VHegZQBeP/ikAhE=
 		</data>
 		<key>PlugIns/rncourseTests.xctest/_CodeSignature/CodeResources</key>
 		<data>
-		5bLzED3XrMVss5tRVLWVec6Ocv0=
+		etygmuiUQm8jsj0045LQFt6OBrU=
 		</data>
 		<key>PlugIns/rncourseTests.xctest/rncourseTests</key>
 		<data>
-		aYgcfy6fFa8u4vmtyHijvr68UdM=
+		p11BR2rwIrQuwrfkboGu5/QKaKY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -84,11 +84,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ra/v1vcBpq8mISyJBkzhJzqIuBU=
+			IcKvZfaGgOSGuDqw5W7DnYmt2CM=
 			</data>
 			<key>hash2</key>
 			<data>
-			eWyhJn+/Dno3AhFeRHCl9HJanCrdWPSpQwgSZfIjdpY=
+			eflBsYdMYzYEKYtTETdA83LMl3gVEmSqnPBboyRVWJ0=
 			</data>
 		</dict>
 		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
@@ -218,33 +218,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			e5I9VVbTLc7/yFCeh0guNh7pkhM=
+			LSYzH/PC+891VHegZQBeP/ikAhE=
 			</data>
 			<key>hash2</key>
 			<data>
-			QiUkgAdNWIcbc6Q5g40uME0lTr4eh+PfsVThcs5GqEw=
+			zu3MqrEdxXnW4dl/fTlKR/jT6QNw8M7ZEpSTO3dTXbE=
 			</data>
 		</dict>
 		<key>PlugIns/rncourseTests.xctest/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5bLzED3XrMVss5tRVLWVec6Ocv0=
+			etygmuiUQm8jsj0045LQFt6OBrU=
 			</data>
 			<key>hash2</key>
 			<data>
-			r9QtObbbzqDLvh1dF2yxWLjQOlj6XWMG6h6eb0VJZLc=
+			Jg+YIA+U1xbQimNFzAItINcgJrLSheatyI4UToFS2vY=
 			</data>
 		</dict>
 		<key>PlugIns/rncourseTests.xctest/rncourseTests</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aYgcfy6fFa8u4vmtyHijvr68UdM=
+			p11BR2rwIrQuwrfkboGu5/QKaKY=
 			</data>
 			<key>hash2</key>
 			<data>
-			OyX5uUKZGY3dkIwf9ppBiLdyg2GPyZ0Ii49wGHltuXg=
+			BI7NRoU//QghZtuQJqXs6g7HEBG7JFWtuOFREj3FKag=
 			</data>
 		</dict>
 	</dict>

@@ -108,6 +108,16 @@ const PlaceList = props => {
 
 # **MISION CUMPLIDA!!**, hemos aprendido a pasar metodos desde componente Raiz a los hijos.
 
+## PERO ESPEREN UN MOMENTO!! **¿Que sucede si nuestra lista crece demasiado que excede el ancho de nuestra pantalla o viewport?**... 😖No podemos:
+
+* ver los elementos!,
+* ni mover la lista para verlos
+* o navegar entre los elementos!!
+
+Entonces como Podemos manejar vistas que son actualmente mas largas que nuestro viewport? mmm 🤔
+
+# **Que no panda el cunico!**, Exploraremos este tema en el proximo capitulo!. 😍
+
 --
 # Archivos finales
 

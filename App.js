@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
 
   },
   textLabel: {
-    color   : 'tomato',
+    color   : 'teal',
     fontSize: 24,
   }
 });
