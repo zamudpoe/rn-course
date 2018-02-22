@@ -56,6 +56,9 @@ info.item.value
 * **item :** es el nombre fijo que usa **```<FlatList />```** para nombrar el arreglo de objetos que le pasamos a **```data```**, que en nuestro caso es el **```estado places```**
 * **value :** es ya la propiedad de nuestro **Estado places** , podria ser **key** o cualquier otra que tenga nuestro estado.
 
+
+> **IMPORTANTE** ```FlatList``` es componente que manipula un datasource con un array de una sola dimension , si ocupamos mas de una dimension para eso necesitaremos el componente nativo **```SectionList```** , podemos conocer mas sobre este tema en la [Documentacion oficial del Componente SectionList]
+
 ---
 ## **BORRANDO** UN ITEM DE LA LISTA DE ELEMENTOS
 
@@ -90,6 +93,48 @@ A estas alturas ya nuestra App ya tiene un  **```estado places```** poblado de r
 
 1. Listo!!!, a probar la app ya debe de eliminar los elementos como normalmente lo veniamos realizando!..
 
+---
+## SOLUCION cuando no usas 'key' como nombre de la key
+
+1. Vamos a cambiarle el nombre a nuestra key de nuestro estado de key a indice
+
+    ```js
+    places: prevState.places.concat({
+              indice: Math.random(),
+              value: placeName
+            })
+    ```
+
+1. Entonces en nuestro componente **```FlatlList```** vamos a decirle que ahora nosotors hemos decidido usar otro nombre distinto para nuestra key por medio del atributo **```keyExtractor```**
+
+    ```js
+    return <FlatList
+              style={ styles.listContainer }
+              data={props.places}
+              keyExtractor={item => item.indice}
+              renderItem={(info) => (
+                <ListItem
+                  placeName     = { info.item.value }
+                  onItemPressed = { () => props.onItemDeleted(info.item.indice) }
+                />
+              )}
+            />
+    ```
+
+1. En cualquier parte donde se uso el estado places **vamos a actualizar el uso o acceso a sus propiedad key por indice** , y listo ahora **```FlatList```** sabra que para key nosotros usamos un nombre persolizado, en nuestro componente raiz **```App.js```** en el manejador **```_onPlaceDeletedHandler```**
+
+    ```js
+    _onPlaceDeletedHandler = key  => {
+        this.setState(prevState => {
+          return {
+            places: prevState.places.filter(place => {
+              return place.indice !== key
+            })
+          }
+        }, console.log('\n\n%cEliminando el elemento %s\n', 'color: tomato; font-weight: bold;' , key))
+      }
+    ```
+
 
 ---
 **ERRORES & SOLUCIONES:**
@@ -110,3 +155,4 @@ A estas alturas ya nuestra App ya tiene un  **```estado places```** poblado de r
 [Documentacion Oficial del Componente ScrollView]:(https://facebook.github.io/react-native/docs/scrollview.html)
 [Using List Views]:(https://facebook.github.io/react-native/docs/using-a-listview.html)
 [Documentacion oficial del Componente FlatList]:(https://facebook.github.io/react-native/docs/flatlist.html)
+[Documentacion oficial del Componente SectionList]:(https://facebook.github.io/react-native/docs/sectionlist.html)

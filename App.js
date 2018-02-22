@@ -13,7 +13,7 @@ export default class App extends Component {
     this.setState(prevState => {
       return {
         places: prevState.places.concat({
-          key: Math.random(),
+          indice: Math.random(),
           value: placeName
         })
       }
@@ -24,7 +24,7 @@ export default class App extends Component {
     this.setState(prevState => {
       return {
         places: prevState.places.filter(place => {
-          return place.key !== key
+          return place.indice !== key
         })
       }
     }, console.log('\n\n%cEliminando el elemento %s\n', 'color: tomato; font-weight: bold;' , key))
