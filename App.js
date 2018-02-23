@@ -6,6 +6,8 @@ import PlaceList from './src/componentes/PlaceList'
 
 import placeImage from './src/assets/beautiful-place.jpg'
 
+const urlImg = 'https://media-cdn.tripadvisor.com/media/photo-s/09/58/8c/3f/playa-lancheros.jpg'
+
 export default class App extends Component {
   state = {
     places: []
@@ -17,7 +19,10 @@ export default class App extends Component {
         places: prevState.places.concat({
           indice: Math.random(),
           name: placeName,
-          image: placeImage
+          // image: placeImage
+          image: {
+            uri: urlImg
+          }
         })
       }
     }, console.log('%o', this.state))

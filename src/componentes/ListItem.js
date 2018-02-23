@@ -6,7 +6,7 @@ const ListItem = (props) => (
     <View style   = { styles.listItem }  >
       <Image
         resizeMode = 'cover'
-        source = { {uri: 'https://media-cdn.tripadvisor.com/media/photo-s/03/9b/2d/bd/cancun.jpg'} }
+        source = { props.placeImage }
         style  = { styles.placeImage }
       / >
       <Text style={{ color: 'purple' }} >{ props.placeName }</Text>
