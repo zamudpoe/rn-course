@@ -3,23 +3,22 @@ import { StyleSheet, View,  Text } from 'react-native';
 
 import PlaceInput from './src/componentes/PlaceInput'
 import PlaceList from './src/componentes/PlaceList'
-
-import placeImage from './src/assets/beautiful-place.jpg'
+import PlaceDetail from './src/componentes/PlaceDetail'
 
 const urlImg = 'https://media-cdn.tripadvisor.com/media/photo-s/09/58/8c/3f/playa-lancheros.jpg'
 
 export default class App extends Component {
   state = {
-    places: []
+    places       : [],
+    selectedPlace: null,
   }
 
   _placeAddedHandler = placeName => {
     this.setState(prevState => {
       return {
         places: prevState.places.concat({
-          indice: Math.random(),
+          key: Math.random(),
           name: placeName,
-          // image: placeImage
           image: {
             uri: urlImg
           }
@@ -28,24 +27,46 @@ export default class App extends Component {
     }, console.log('%o', this.state))
   }
 
-  _onPlaceDeletedHandler = key  => {
+  _placeDeletedHandler = () => {
     this.setState(prevState => {
       return {
         places: prevState.places.filter(place => {
-          return place.indice !== key
+          return place.key !== prevState.selectedPlace.key;
+        }),
+        selectedPlace: null
+      };
+    });
+  };
+
+  _modalClosedHandler = () => {
+    this.setState({
+      selectedPlace: null
+    });
+  };
+
+  _onPlaceSelectedHandler = key => {
+    this.setState(prevState => {
+      return {
+        selectedPlace: prevState.places.find(place => {
+          return place.key === key;
         })
-      }
-    }, console.log('\n\n%cEliminando el elemento %s\n', 'color: tomato; font-weight: bold;' , key))
-  }
+      };
+    });
+  };
 
   render () {
     return (
       <View style={styles.mainContainer}>
         <Text style= { styles.textLabel } >🗽 Mis Lugares</Text>
-        <PlaceInput onPlaceAdded={ this._placeAddedHandler.bind(this) } />
+        <PlaceDetail
+          selectedPlace = { this.state.selectedPlace }
+          onItemDeleted = { this._placeDeletedHandler }
+          onModalClosed = { this._modalClosedHandler }
+        />
+        <PlaceInput onPlaceAdded={ this._placeAddedHandler } />
         <PlaceList
-          places = { this.state.places }
-          onItemDeleted = { this._onPlaceDeletedHandler }
+          places         = { this.state.places }
+          onItemSelected = { this._onPlaceSelectedHandler }
         />
       </View>
     )
@@ -60,7 +81,6 @@ const styles = StyleSheet.create({
     justifyContent : 'flex-start', /* coloca a tus hijos al inicio del eje principal (Eje Y)  */
     alignItems     : 'center', /* Posicionate en el centro del eje perpendicular (Eje X) al principal (Eje Y) */
     backgroundColor: 'whitesmoke',
-
   },
   textLabel: {
     color   : 'teal',

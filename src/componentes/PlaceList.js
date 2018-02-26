@@ -8,7 +8,7 @@ const PlaceList = props => {
   return <FlatList
           style={ styles.listContainer }
           data={props.places} /* 'data' es un datasource tras bambalinas y noostros le asignamos el estado 'places' */
-          keyExtractor={item => item.indice}
+          /* keyExtractor={item => item.indice} */
           /*
             Recuerdemos que en App.js en el handler '_placeAddedHandler' actualizamos el estado 'places'
 
@@ -38,7 +38,7 @@ const PlaceList = props => {
             <ListItem
               placeName     = { info.item.name }
               placeImage = { info.item.image }
-              onItemPressed = { () => props.onItemDeleted(info.item.indice) }
+              onItemPressed = { () => props.onItemSelected(info.item.key) }
              />
           )}
          />
