@@ -6,7 +6,7 @@ const PlaceDetail = props => {
 
   if (props.selectedPlace) {
     modalContent = (
-      <View style = {{ backgroundColor: 'purple' }} >
+      <View style = {{ backgroundColor: 'whitesmoke' }} >
         <Image source={props.selectedPlace.image} style={styles.placeImage} />
         <Text style={styles.placeName}>{props.selectedPlace.name}</Text>
       </View>
@@ -23,7 +23,7 @@ const PlaceDetail = props => {
         {modalContent}
         <View>
           <Button
-            title   = "Delete" color="red"
+            title   = "¿Eliminar?" color="red"
             onPress = {props.onItemDeleted}
           />
           <Button

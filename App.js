@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { StyleSheet, View,  Text } from 'react-native';
-
 import PlaceInput from './src/componentes/PlaceInput'
 import PlaceList from './src/componentes/PlaceList'
 import PlaceDetail from './src/componentes/PlaceDetail'

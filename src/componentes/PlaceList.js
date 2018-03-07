@@ -37,7 +37,7 @@ const PlaceList = props => {
           renderItem={(info) => (
             <ListItem
               placeName     = { info.item.name }
-              placeImage = { info.item.image }
+              placeImage    = { info.item.image }
               onItemPressed = { () => props.onItemSelected(info.item.key) }
              />
           )}
@@ -47,8 +47,8 @@ const PlaceList = props => {
 
 const styles = StyleSheet.create({
   listContainer: {
-    width: '100%',
-    backgroundColor: 'white'  // '#eee',
+    width           : '100%',
+    backgroundColor : 'white'  // '#eee',
   }
 })
 
