@@ -6,6 +6,10 @@ class PlaceInput extends Component {
     placeName: ''
   }
 
+  componentDidMount () {
+
+    console.log('%cBienvenido PlaceInput', 'color: tomato;')
+  }
   _placeNameChangeHandler = val => {
     this.setState({
       placeName: val
