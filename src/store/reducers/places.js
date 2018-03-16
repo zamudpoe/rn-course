@@ -11,7 +11,7 @@ const reducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_PLACE:
       return {
-        ..state,
+        ...state,
         places: state.places.concat({
           key  : Math.random(),
           name : action.placeName,

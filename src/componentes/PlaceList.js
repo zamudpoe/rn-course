@@ -5,7 +5,8 @@ import ListItem from './ListItem'
 
 const PlaceList = props => {
 
-  return <FlatList
+  return (
+    <FlatList
           style={ styles.listContainer }
           data={props.places} /* 'data' es un datasource tras bambalinas y noostros le asignamos el estado 'places' */
           /* keyExtractor={item => item.indice} */
@@ -41,8 +42,8 @@ const PlaceList = props => {
               onItemPressed = { () => props.onItemSelected(info.item.key) }
              />
           )}
-         />
-
+    />
+  )
 }
 
 const styles = StyleSheet.create({
