@@ -7,6 +7,7 @@ import configureStore from './src/store/configureStore';
 /** creamos la funcion para el Store */
 const store = configureStore()
 
+/** Helper Component */
 const RNredux = () => (
   <Provider store={ store } >
     <App />
