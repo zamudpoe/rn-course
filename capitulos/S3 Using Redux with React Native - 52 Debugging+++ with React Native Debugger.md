@@ -12,7 +12,7 @@ Despues lo descomprimimos y ejecutamos la aplicacion **``React Native Debugger.a
 
 Una vez que tenemos abierta la aplicacion  **``React Native Debugger.app``** nos vamos a la seccion de la izquierda y vamos expandiendo el arbol de HTML hasta llegar a
 
-```html
+```HTML
 <Connect(App)>
   <App>
     <View ...  >  <--- y aqui escogemos los estilo para modificarlos y veremos como se actualiza nuestra app de forma automatica. hagamos la prueba cambienmos el color de fondo por uno llamativo como rojo.
