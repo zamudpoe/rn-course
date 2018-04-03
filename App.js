@@ -13,6 +13,7 @@ const urlImg = 'https://media-cdn.tripadvisor.com/media/photo-s/09/58/8c/3f/play
 
 class App extends Component {
   _placeAddedHandler = placeName => {
+    console.log("%cAgregando A: %c%s", 'color: teal;', 'color: tomato;' , placeName)
     this.props.onAddPlace(placeName)
   }
 
