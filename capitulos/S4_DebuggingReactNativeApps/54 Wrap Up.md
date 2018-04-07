@@ -13,7 +13,7 @@ bien ya lo demas es practicar , practicar practicar... manos a la obraaaa!!!
 
 
 ---
-## Recursos utiles & Links
+## Clase 55 Recursos utiles & Links
 
 * [React Native Debugger]
 * [More about Debugging]
