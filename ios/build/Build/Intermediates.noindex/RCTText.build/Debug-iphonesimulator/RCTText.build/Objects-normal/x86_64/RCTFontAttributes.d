@@ -1,24 +1,24 @@
 dependencies: \
-  /Users/engelbert.zamudio/Documents/PRUEBAS/udemy/ThePracticalGuide/rn-course/node_modules/react-native/Libraries/Text/RCTFontAttributes.m \
-  /Users/engelbert.zamudio/Documents/PRUEBAS/udemy/ThePracticalGuide/rn-course/node_modules/react-native/Libraries/Text/RCTFontAttributes.h \
-  /Users/engelbert.zamudio/Documents/PRUEBAS/udemy/ThePracticalGuide/rn-course/node_modules/react-native/Libraries/Text/RCTFontAttributesDelegate.h \
-  /Users/engelbert.zamudio/Documents/PRUEBAS/udemy/ThePracticalGuide/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAccessibilityManager.h \
-  /Users/engelbert.zamudio/Documents/PRUEBAS/udemy/ThePracticalGuide/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
-  /Users/engelbert.zamudio/Documents/PRUEBAS/udemy/ThePracticalGuide/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
-  /Users/engelbert.zamudio/Documents/PRUEBAS/udemy/ThePracticalGuide/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
-  /Users/engelbert.zamudio/Documents/PRUEBAS/udemy/ThePracticalGuide/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
-  /Users/engelbert.zamudio/Documents/PRUEBAS/udemy/ThePracticalGuide/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
-  /Users/engelbert.zamudio/Documents/PRUEBAS/udemy/ThePracticalGuide/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
-  /Users/engelbert.zamudio/Documents/PRUEBAS/udemy/ThePracticalGuide/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
-  /Users/engelbert.zamudio/Documents/PRUEBAS/udemy/ThePracticalGuide/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
-  /Users/engelbert.zamudio/Documents/PRUEBAS/udemy/ThePracticalGuide/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFont.h \
-  /Users/engelbert.zamudio/Documents/PRUEBAS/udemy/ThePracticalGuide/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTConvert.h \
-  /Users/engelbert.zamudio/Documents/PRUEBAS/udemy/ThePracticalGuide/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAnimationType.h \
-  /Users/engelbert.zamudio/Documents/PRUEBAS/udemy/ThePracticalGuide/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
-  /Users/engelbert.zamudio/Documents/PRUEBAS/udemy/ThePracticalGuide/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
-  /Users/engelbert.zamudio/Documents/PRUEBAS/udemy/ThePracticalGuide/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
-  /Users/engelbert.zamudio/Documents/PRUEBAS/udemy/ThePracticalGuide/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTPointerEvents.h \
-  /Users/engelbert.zamudio/Documents/PRUEBAS/udemy/ThePracticalGuide/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
-  /Users/engelbert.zamudio/Documents/PRUEBAS/udemy/ThePracticalGuide/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
-  /Users/engelbert.zamudio/Documents/PRUEBAS/udemy/ThePracticalGuide/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
-  /Users/engelbert.zamudio/Documents/PRUEBAS/udemy/ThePracticalGuide/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h
+  /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/node_modules/react-native/Libraries/Text/RCTFontAttributes.m \
+  /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/node_modules/react-native/Libraries/Text/RCTFontAttributes.h \
+  /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/node_modules/react-native/Libraries/Text/RCTFontAttributesDelegate.h \
+  /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAccessibilityManager.h \
+  /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFont.h \
+  /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTConvert.h \
+  /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAnimationType.h \
+  /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
+  /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTPointerEvents.h \
+  /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h

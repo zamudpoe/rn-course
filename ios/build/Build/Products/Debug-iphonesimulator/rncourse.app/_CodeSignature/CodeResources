@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		JJp5JpHp1qPsun4wGd6xXYtLHrc=
+		Tas57XRJ6jwXwv/2g4dZdel0fcI=
 		</data>
 		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
 		<data>
@@ -51,7 +51,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2EgYnILzdYgnvXt8Gi9deQrjcqI=
+		qruSTWXBbBGie7cNnzf9voDu340=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -63,19 +63,19 @@
 		</data>
 		<key>PlugIns/rncourseTests.xctest.dSYM/Contents/Resources/DWARF/rncourseTests</key>
 		<data>
-		+F/J8RsD6qYAHWhj953DN1TdDFo=
+		k80tcJR09ab8Ijc7srVE4BiGXNM=
 		</data>
 		<key>PlugIns/rncourseTests.xctest/Info.plist</key>
 		<data>
-		qe2MYk81MxDZO8MvYbSxIRwfNt8=
+		GyM/Ko3Siwxvt1U9DTALvl3/3Jw=
 		</data>
 		<key>PlugIns/rncourseTests.xctest/_CodeSignature/CodeResources</key>
 		<data>
-		4G7TFZk/WGhpzvnwfNV4VGGDrko=
+		7bJzCOxr61iCjfkg/TM/HD2VJtg=
 		</data>
 		<key>PlugIns/rncourseTests.xctest/rncourseTests</key>
 		<data>
-		xxQc+9TQrnBsw3HNMIxWzSBzKXg=
+		j8vV3PBurcGkvl40PhelbcNjzBY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -84,11 +84,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JJp5JpHp1qPsun4wGd6xXYtLHrc=
+			Tas57XRJ6jwXwv/2g4dZdel0fcI=
 			</data>
 			<key>hash2</key>
 			<data>
-			AkLZI5bGufGdX9jecNsPd8wlqRn15apjg/LlkFaa7ts=
+			TyPKCUzotY2+ChHNHFMx8OdbSi5GJfrDZMVFAqekwTw=
 			</data>
 		</dict>
 		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
@@ -207,44 +207,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+F/J8RsD6qYAHWhj953DN1TdDFo=
+			k80tcJR09ab8Ijc7srVE4BiGXNM=
 			</data>
 			<key>hash2</key>
 			<data>
-			N/RZAIqmupBLL34PoSyngNyyPVlXLuNjtm7m8t97wn4=
+			bVjp0Ucm2BGj11fwtXp/oZjWPYLOAw0klUMruW0ii8U=
 			</data>
 		</dict>
 		<key>PlugIns/rncourseTests.xctest/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qe2MYk81MxDZO8MvYbSxIRwfNt8=
+			GyM/Ko3Siwxvt1U9DTALvl3/3Jw=
 			</data>
 			<key>hash2</key>
 			<data>
-			4QRUkn5g6i+J5T4OfFKBj1Z/ZP7bTuTz7fIII76ABLs=
+			ZQhq5qFYH07jU6gXMD7Y//z9bkwtrWEWeM1VtvUSfIw=
 			</data>
 		</dict>
 		<key>PlugIns/rncourseTests.xctest/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4G7TFZk/WGhpzvnwfNV4VGGDrko=
+			7bJzCOxr61iCjfkg/TM/HD2VJtg=
 			</data>
 			<key>hash2</key>
 			<data>
-			39rhFfsBw8hvQ9DFZGKXgsaDOc8qyeK+cV6A60YDVeI=
+			/sT2zvDkaxjG0OMAfci0nTX5MEcB6zYVnX6QTdchCpA=
 			</data>
 		</dict>
 		<key>PlugIns/rncourseTests.xctest/rncourseTests</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xxQc+9TQrnBsw3HNMIxWzSBzKXg=
+			j8vV3PBurcGkvl40PhelbcNjzBY=
 			</data>
 			<key>hash2</key>
 			<data>
-			IwX4dpD96oLMPSQ3ZN1LlJXMoMhzk7TIJPDyXEmOLKk=
+			NEUuvkg18vg+pLaScmUg7XRpJein+zRaD0TaiU5BmW4=
 			</data>
 		</dict>
 	</dict>

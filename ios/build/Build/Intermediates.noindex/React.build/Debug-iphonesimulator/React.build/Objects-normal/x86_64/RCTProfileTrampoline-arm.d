@@ -1,4 +1,4 @@
 dependencies: \
-  /Users/engelbert.zamudio/Documents/PRUEBAS/udemy/ThePracticalGuide/rn-course/node_modules/react-native/React/Profiler/RCTProfileTrampoline-arm.S \
-  /Users/engelbert.zamudio/Documents/PRUEBAS/udemy/ThePracticalGuide/rn-course/node_modules/react-native/React/Base/RCTDefines.h \
-  /Users/engelbert.zamudio/Documents/PRUEBAS/udemy/ThePracticalGuide/rn-course/node_modules/react-native/React/Profiler/RCTMacros.h
+  /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/node_modules/react-native/React/Profiler/RCTProfileTrampoline-arm.S \
+  /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/node_modules/react-native/React/Profiler/RCTMacros.h

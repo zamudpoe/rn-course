@@ -61,7 +61,7 @@ Con esto ya podremos ver nuestra **Aplicacion Rect Native** ejecutandose en modo
 * Sección 2 Diving into the Basics: 29 Capitulos
 
     12. Module Introduction
-    13. [ **ESTAMOS AQUI** ] Creating a New Project
+    13. Creating a New Project
       fixing-setup-errors.pdf
     14. JSX Elements you Can and Can't Use
     15. Ejecting from Create React Native App
@@ -140,7 +140,7 @@ Con esto ya podremos ver nuestra **Aplicacion Rect Native** ejecutandose en modo
 * Sección: 5 Linking and Using Third Party Libraries : 7 Capitulos
 
     56. Module Introduction
-    57. Installing Libraries
+    57.  [ **ESTAMOS AQUI** ] Installing Libraries
     58. Automatic Linking
     59. Linking Libraries on iOS
     60. Linking Libraries on Android
