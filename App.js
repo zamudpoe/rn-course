@@ -30,22 +30,20 @@ class App extends Component {
     };
 
     render() {
-            return (
-              <View style = { styles.mainContainer } >
-                <Text style = { styles.textLabel } > 🗽Mis Lugares </Text>
-                <PlaceDetail
-                  selectedPlace = { this.props.selectedPlace }
-                  onItemDeleted = { this._placeDeletedHandler }
-                  onModalClosed = { this._modalClosedHandler }
-                />
-                <PlaceInput
-                  onPlaceAdded = { this._placeAddedHandler }
-                />
-                <PlaceList
-                  places = { this.props.places }
-                  onItemSelected = { this._onPlaceSelectedHandler }
-                />
-              </View >
+        return (
+          <View style = { styles.mainContainer } >
+            <Text style = { styles.textLabel } > 🗽Mis Lugares </Text>
+            <PlaceDetail
+              selectedPlace = { this.props.selectedPlace }
+              onItemDeleted = { this._placeDeletedHandler }
+              onModalClosed = { this._modalClosedHandler }
+            />
+            <PlaceInput onPlaceAdded = { this._placeAddedHandler }/>
+            <PlaceList
+              places = { this.props.places }
+              onItemSelected = { this._onPlaceSelectedHandler }
+            />
+          </View >
         )
     }
 }

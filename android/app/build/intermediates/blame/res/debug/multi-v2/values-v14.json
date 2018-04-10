@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/engelbert.zamudio/Documents/PRUEBAS/udemy/ThePracticalGuide/rn-course/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml",
+            "outputFile": "/Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml",
             "map": [
                 {
-                    "source": "/Users/engelbert.zamudio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/5ee9c94ab1b05da4fb069f65a60b6b73/res/values-v14/values-v14.xml",
+                    "source": "/Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/7c5327e082501ed239b1ab5d56a34465/res/values-v14/values-v14.xml",
                     "from": {
                         "startLines": "4,11,12,13,19,27,28,29,32,33",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
