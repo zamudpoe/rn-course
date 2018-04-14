@@ -4,7 +4,7 @@
             "outputFile": "/Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "/Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/7c5327e082501ed239b1ab5d56a34465/res/values-v17/values-v17.xml",
+                    "source": "/Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/fbf1b2a2d85d7ff68958c11b94328f79/res/values-v17/values-v17.xml",
                     "from": {
                         "startLines": "4,7,11,15,18,21,24,28,32,35,38,41,45",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",

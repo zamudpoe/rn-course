@@ -5,18 +5,18 @@ INJECTED from /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/android/app
 INJECTED from /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/android/app/src/main/AndroidManifest.xml:1:1-32:12
 INJECTED from /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/android/app/src/main/AndroidManifest.xml:1:1-32:12
 MERGED from [:react-native-vector-icons] /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.react:react-native:0.52.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/51bd96d7585f1e08035839fbe5c95877/AndroidManifest.xml:2:1-15:12
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/7c5327e082501ed239b1ab5d56a34465/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:support-v4:23.0.1] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/4011ba3a3693a30f8e3496fbde7a75cd/AndroidManifest.xml:17:1-24:12
-MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/dd337d5c3a3d4550a98549621d3d91fc/AndroidManifest.xml:10:1-18:12
-MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/babe424831c619c135c8bdfcbcb67f60/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/81ff9268a9060885533c3d9de3ed05c1/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/d3edb51b90df310a38235085907b1171/AndroidManifest.xml:1:1-4:12
-MERGED from [org.webkit:android-jsc:r174650] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/3ad378cba5711f2a2133895bdcf002b3/AndroidManifest.xml:1:1-3:12
-MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/de5448a4b043b1a6be75129959f4aeec/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/e7c49ee07fab5a2959fb4cbb1c405bdc/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/0e11eefe08035b5b7aa0b6b8124c4a75/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/f8228b4bf220c7448599fdafa97cc808/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.react:react-native:0.52.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/d1264497f92ca29d11c583cd7886b37e/AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/fbf1b2a2d85d7ff68958c11b94328f79/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-v4:23.0.1] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/83a351816e824241a0508ffd684230a6/AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/807076d8a5bbf04ac9779dc4fc1c6800/AndroidManifest.xml:10:1-18:12
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/2d150160c8a089f6adaac95038949c37/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/e2569296ae94dfffff427f62165195ea/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/cc2ddbea8025dc12e19ee2e8dfcc63b2/AndroidManifest.xml:1:1-4:12
+MERGED from [org.webkit:android-jsc:r174650] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/24e938396557522f7f1205215d9a160b/AndroidManifest.xml:1:1-3:12
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/24dc60835ca901e1ea3c1b554b5c16a0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/9d13c4454d7e5abb530d1e2ac16811dc/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/df3fcf8714a1baad731e73e1dd7ea30c/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/42d50010be1be78c447c58ff2468d88e/AndroidManifest.xml:2:1-9:12
 INJECTED from /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/android/app/src/main/AndroidManifest.xml:1:1-32:12
 INJECTED from /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/android/app/src/main/AndroidManifest.xml:1:1-32:12
 INJECTED from /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/android/app/src/main/AndroidManifest.xml:1:1-32:12
@@ -40,8 +40,8 @@ ADDED from /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/android/app/sr
 		ADDED from /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/android/app/src/main/AndroidManifest.xml:6:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
 ADDED from /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/android/app/src/main/AndroidManifest.xml:7:5-77
-MERGED from [com.facebook.react:react-native:0.52.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/51bd96d7585f1e08035839fbe5c95877/AndroidManifest.xml:11:5-78
-MERGED from [com.facebook.react:react-native:0.52.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/51bd96d7585f1e08035839fbe5c95877/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.52.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/d1264497f92ca29d11c583cd7886b37e/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.52.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/d1264497f92ca29d11c583cd7886b37e/AndroidManifest.xml:11:5-78
 	android:name
 		ADDED from /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/android/app/src/main/AndroidManifest.xml:7:22-75
 uses-sdk
@@ -50,28 +50,28 @@ INJECTED from /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/android/app
 INJECTED from /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/android/app/src/main/AndroidManifest.xml:9:5-11:41
 MERGED from [:react-native-vector-icons] /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.52.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/51bd96d7585f1e08035839fbe5c95877/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.52.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/51bd96d7585f1e08035839fbe5c95877/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/7c5327e082501ed239b1ab5d56a34465/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/7c5327e082501ed239b1ab5d56a34465/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.0.1] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/4011ba3a3693a30f8e3496fbde7a75cd/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.0.1] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/4011ba3a3693a30f8e3496fbde7a75cd/AndroidManifest.xml:20:5-43
-MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/dd337d5c3a3d4550a98549621d3d91fc/AndroidManifest.xml:14:5-16:41
-MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/dd337d5c3a3d4550a98549621d3d91fc/AndroidManifest.xml:14:5-16:41
-MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/babe424831c619c135c8bdfcbcb67f60/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/babe424831c619c135c8bdfcbcb67f60/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/81ff9268a9060885533c3d9de3ed05c1/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/81ff9268a9060885533c3d9de3ed05c1/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/d3edb51b90df310a38235085907b1171/AndroidManifest.xml:2:3-70
-MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/d3edb51b90df310a38235085907b1171/AndroidManifest.xml:2:3-70
-MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/de5448a4b043b1a6be75129959f4aeec/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/de5448a4b043b1a6be75129959f4aeec/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/e7c49ee07fab5a2959fb4cbb1c405bdc/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/e7c49ee07fab5a2959fb4cbb1c405bdc/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/0e11eefe08035b5b7aa0b6b8124c4a75/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/0e11eefe08035b5b7aa0b6b8124c4a75/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/f8228b4bf220c7448599fdafa97cc808/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/f8228b4bf220c7448599fdafa97cc808/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.react:react-native:0.52.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/d1264497f92ca29d11c583cd7886b37e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.52.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/d1264497f92ca29d11c583cd7886b37e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/fbf1b2a2d85d7ff68958c11b94328f79/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/fbf1b2a2d85d7ff68958c11b94328f79/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.1] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/83a351816e824241a0508ffd684230a6/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.1] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/83a351816e824241a0508ffd684230a6/AndroidManifest.xml:20:5-43
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/807076d8a5bbf04ac9779dc4fc1c6800/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/807076d8a5bbf04ac9779dc4fc1c6800/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/2d150160c8a089f6adaac95038949c37/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/2d150160c8a089f6adaac95038949c37/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/e2569296ae94dfffff427f62165195ea/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/e2569296ae94dfffff427f62165195ea/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/cc2ddbea8025dc12e19ee2e8dfcc63b2/AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/cc2ddbea8025dc12e19ee2e8dfcc63b2/AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/24dc60835ca901e1ea3c1b554b5c16a0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/24dc60835ca901e1ea3c1b554b5c16a0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/9d13c4454d7e5abb530d1e2ac16811dc/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/9d13c4454d7e5abb530d1e2ac16811dc/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/df3fcf8714a1baad731e73e1dd7ea30c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/df3fcf8714a1baad731e73e1dd7ea30c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/42d50010be1be78c447c58ff2468d88e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/42d50010be1be78c447c58ff2468d88e/AndroidManifest.xml:5:5-7:41
 INJECTED from /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/android/app/src/main/AndroidManifest.xml:9:5-11:41
 INJECTED from /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/android/app/src/main/AndroidManifest.xml:9:5-11:41
 	android:targetSdkVersion
@@ -84,16 +84,16 @@ INJECTED from /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/android/app
 		INJECTED from /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/android/app/src/main/AndroidManifest.xml
 application
 ADDED from /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/android/app/src/main/AndroidManifest.xml:13:5-30:19
-MERGED from [com.facebook.react:react-native:0.52.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/51bd96d7585f1e08035839fbe5c95877/AndroidManifest.xml:13:5-20
-MERGED from [com.facebook.react:react-native:0.52.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/51bd96d7585f1e08035839fbe5c95877/AndroidManifest.xml:13:5-20
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/7c5327e082501ed239b1ab5d56a34465/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/7c5327e082501ed239b1ab5d56a34465/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.0.1] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/4011ba3a3693a30f8e3496fbde7a75cd/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.0.1] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/4011ba3a3693a30f8e3496fbde7a75cd/AndroidManifest.xml:22:5-20
-MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/d3edb51b90df310a38235085907b1171/AndroidManifest.xml:3:3-17
-MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/d3edb51b90df310a38235085907b1171/AndroidManifest.xml:3:3-17
-MERGED from [org.webkit:android-jsc:r174650] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/3ad378cba5711f2a2133895bdcf002b3/AndroidManifest.xml:2:3-17
-MERGED from [org.webkit:android-jsc:r174650] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/3ad378cba5711f2a2133895bdcf002b3/AndroidManifest.xml:2:3-17
+MERGED from [com.facebook.react:react-native:0.52.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/d1264497f92ca29d11c583cd7886b37e/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.52.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/react-native-0.52.0.aar/d1264497f92ca29d11c583cd7886b37e/AndroidManifest.xml:13:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/fbf1b2a2d85d7ff68958c11b94328f79/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/fbf1b2a2d85d7ff68958c11b94328f79/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.1] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/83a351816e824241a0508ffd684230a6/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.1] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/83a351816e824241a0508ffd684230a6/AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/cc2ddbea8025dc12e19ee2e8dfcc63b2/AndroidManifest.xml:3:3-17
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/cc2ddbea8025dc12e19ee2e8dfcc63b2/AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/24e938396557522f7f1205215d9a160b/AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/engel_zamudio/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/24e938396557522f7f1205215d9a160b/AndroidManifest.xml:2:3-17
 	android:label
 		ADDED from /Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/android/app/src/main/AndroidManifest.xml:16:7-39
 	android:icon
