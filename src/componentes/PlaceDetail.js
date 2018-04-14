@@ -26,7 +26,7 @@ const PlaceDetail = props => {
       >
         <View >
           { modalContent }
-          <View >
+          <View>
             <TouchableOpacity onPress= { props.onItemDeleted } >
               <View style = { styles.deleteButton } >
                 <Icon
@@ -34,6 +34,7 @@ const PlaceDetail = props => {
                   color = 'tomato'
                   size = { 30 }
                 />
+                <Text style={{ left: 5 ,fontSize: 24, color: 'tomato' }} >Eliminar</Text>
               </View>
             </TouchableOpacity>
             <Button
@@ -60,7 +61,9 @@ const styles = StyleSheet.create({
       fontSize: 28
     },
     deleteButton: {
-      alignItems: "center",
+      flexDirection : 'row',
+      justifyContent: "center",
+      alignItems    : "center",
     }
 });
 

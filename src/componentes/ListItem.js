@@ -8,7 +8,7 @@ const ListItem = (props) => (
         resizeMode = 'cover'
         source = { props.placeImage }
         style  = { styles.placeImage }
-      / >
+      />
       <Text style={{ color: 'purple' }} >{ props.placeName }</Text>
     </View>
   </TouchableOpacity>
