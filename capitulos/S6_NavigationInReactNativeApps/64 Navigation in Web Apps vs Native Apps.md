@@ -1,18 +1,18 @@
 # Seccion 6 - Navigation in React Native Apps
-## **Clase 63 .** Module Introduction
+## **Clase 64 .** Navigation in Web Apps vs Native Apps
 ---
-## Como llegar de A a B
+## Cual es la diferencia (comparado a la Web?)
 
-En este modulo aprenderemos como navegar atraves de una vista a otra dentro de nuestra aplicacion React Native.
+### WEB
+* Usamos React Router para la navegacion
+* Navegamos a traves de URL´s para ir y venir entre paginas.
 
-### Que hay dentro de este modulo?
+### Aplicaciones Nativas React
+* Navegacion entre paginas por medio de:
+  * Tabs
+  * Stack based
 
-* Que hay de especial acerca de la mavegacion?.
-* Soluciones disponibles de la Navegacion.
-* Stack-based Navigation, Stack-based Navigation & Side Drawers
-* Pasando Datos Alrededor
-* Agregando Redux.
-
+En el siguinte capitulo veremos como manejar el ruteo en nuestra Aplicación React Native.
 
 ---
 **ERRORES & SOLUCIONES:**
