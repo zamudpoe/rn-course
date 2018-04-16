@@ -1,4 +1,4 @@
-#Sun Apr 08 22:55:34 CDT 2018
-base.0=/Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/android/app/build/intermediates/transforms/dexMerger/debug/0
+#Sun Apr 15 18:02:10 CDT 2018
+base.0=/Users/engel_zamudio/Documents/PRUEBAS/udemy/rn-course/android/app/build/intermediates/transforms/dexMerger/debug/15
 path.0=classes.dex
 renamed.0=classes.dex
