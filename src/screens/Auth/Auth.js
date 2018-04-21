@@ -11,14 +11,15 @@ class AuthScreen extends Component {
   render () {
     return (
       <View>
-        <Text>Auth Screen</Text>
+        <Text>Ventana de Acceso</Text>
         <Button
-          title   = "Login"
+          title   = "Login ..."
           onPress = { this.loginHandler }
         />
       </View>
     )
   }
+
 }
 
 export default AuthScreen;

@@ -4,7 +4,7 @@ import Icon from '../../../node_modules/react-native-vector-icons/Ionicons'
 
 const startTabs = () => {
   Promise.all([
-    Icon.getImageSource("md-map", size = 30),
+    Icon.getImageSource("md-map", size = 30) ,
     Icon.getImageSource("md-share", size = 30)
   ]).then(sources => {
     Navigation.startTabBasedApp({

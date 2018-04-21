@@ -14,7 +14,7 @@ Despues seguiremos las instrucciones para vincularlo a los simuladores en iOS y 
 * [iOS Installation] : procedemos a realizar las instrucciones y  vinculamos la libreria a XCode como ya lo hicimos anteriormente.
 
 
-
+Documentacion oficial **``React Native Navigation`` :** [React Native Navigation]
 
 
 ---

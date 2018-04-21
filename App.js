@@ -1,9 +1,11 @@
+/*   */
 import { Navigation } from 'react-native-navigation'
 import { Provider } from 'react-redux'
 
 import AuthScreen from './src/screens/Auth/Auth'
 import SharePlaceScreen from './src/screens/SharePlace/SharePlace'
 import FindPlaceScreen from './src/screens/FindPlace/FindPlace'
+
 import configureStore from './src/store/configureStore';
 
 /** creamos la funcion para el Store */
@@ -32,7 +34,9 @@ Navigation.registerComponent(
 // Iniciar la App
 Navigation.startSingleScreenApp({
     screen: {
-        screen: 'awesome-places.AuthScreen', // unique ID registered with Navigation.registerScreen
-        title: 'Login' // title of the screen as appears in the nav bar (optional)
+      screen: 'awesome-places.AuthScreen', // unique ID registered with Navigation.registerScreen
+      title : 'Awesome Places' // title of the screen as appears in the nav bar (optional)
     },
 })
+
+

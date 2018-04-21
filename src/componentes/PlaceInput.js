@@ -10,6 +10,7 @@ class PlaceInput extends Component {
 
     console.log('%cBienvenido PlaceInput', 'color: tomato;')
   }
+
   _placeNameChangeHandler = val => {
     this.setState({
       placeName: val
@@ -20,7 +21,7 @@ class PlaceInput extends Component {
     if (this.state.placeName.trim() === "" ) {
       return
     }
-    this.props.onPlaceAdded(this.state.placeName);
+    this.props.onPlaceAdded(this.state.placeName)
     this.setState({ placeName: '' })
   }
 
