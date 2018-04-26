@@ -8,7 +8,7 @@ import { addPlace, deletePlace } from '../../store/actions/index' /** Action Cre
 
 class SharePlaceScreen extends Component {
   placeAddHandler = placeName => {
-    this.props.onAdddPlace(placeName)
+    this.props.onAddPlace(placeName)
   }
 
   render() {
@@ -22,9 +22,10 @@ class SharePlaceScreen extends Component {
 
 const MapDispatchToProps = dispatch => {
   return {
-    onAdddPlace: (placeName) => dispatch(addPlace(placeName))
+    onAddPlace: (placeName) => dispatch(addPlace(placeName))
   }
 }
 
+/* anexamos la funcion onAddPlace para ser usada como props y asi acceder a la funcion dispatch */
 export default connect(null, MapDispatchToProps)(SharePlaceScreen)
 

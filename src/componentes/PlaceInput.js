@@ -7,7 +7,6 @@ class PlaceInput extends Component {
   }
 
   componentDidMount () {
-
     console.log('%cBienvenido PlaceInput', 'color: tomato;')
   }
 
