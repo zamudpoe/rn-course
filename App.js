@@ -5,6 +5,7 @@ import { Provider } from 'react-redux'
 import AuthScreen from './src/screens/Auth/Auth'
 import SharePlaceScreen from './src/screens/SharePlace/SharePlace'
 import FindPlaceScreen from './src/screens/FindPlace/FindPlace'
+import PlaceDetail from './src/screens/PlaceDetail/PlaceDetail'
 
 import configureStore from './src/store/configureStore';
 
@@ -29,6 +30,12 @@ Navigation.registerComponent(
   () => FindPlaceScreen,
   store,
   Provider
+)
+
+Navigation.registerComponent(
+  "awesome-places.PlaceDetailScreen",
+  () => PlaceDetail,
+  /** No pasaremos store y provider ya que ahora no  necesitamos redux aqui */
 )
 
 // Iniciar la App
