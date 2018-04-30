@@ -1,6 +1,6 @@
 # Seccion 6 - Navigation in React Native Apps
 
-## **Clase 73:** Actualizando Redux
+## **Clase 74:** Pushing Pages (Navigating "Forwards")
 ---
 
 Bueno en nuestro capitulo anterior nos aseguraos que podamos una vez mas agregar lugares y usarlos. pero que pasa si deseamos darle click a un lugar?, **obtendremos un error** por que no estamos manejando esto en los items seleccionados. asi que vamos a configurar este evento pero lo haremos de una nueva manera, asi que vamos a modificar nuestro archivo ```PlaceDetail.js``` y vamos a eliminar el uso del modal por que aprenderemos algo nuevo aqui... veamos!
